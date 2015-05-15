@@ -1,0 +1,79 @@
+[INFO][2015-05-15 11:07:05,533][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-05-15 11:07:05,910][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-05-15 11:07:05,991][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@5caf993e: startup date [Fri May 15 11:07:05 CST 2015]; root of context hierarchy
+[INFO][2015-05-15 11:07:06,118][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-05-15 11:07:06,153][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d3f136e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,userDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-05-15 11:07:06,320][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-05-15 11:07:06,441][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-05-15 11:07:06,880][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-05-15 11:07:06,885][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-05-15 11:07:06,887][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-05-15 11:07:06,888][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-05-15 11:07:07,154][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-05-15 11:07:07,273][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-05-15 11:07:07,278][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-05-15 11:07:07,440][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-05-15 11:07:07,440][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-05-15 11:07:07,443][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-05-15 11:07:07,446][java.sql.DatabaseMetaData]HHH000262: Table not found: t_user
+[INFO][2015-05-15 11:07:07,447][java.sql.DatabaseMetaData]HHH000262: Table not found: t_user
+[INFO][2015-05-15 11:07:07,448][java.sql.DatabaseMetaData]HHH000262: Table not found: t_user
+[INFO][2015-05-15 11:07:07,681][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-05-15 11:07:07,796][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-05-15 11:07:06",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1071135988, ConnectTime:"2015-05-15 11:07:07", UseCount:2, LastActiveTime:"2015-05-15 11:07:07"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-05-15 11:07:07,858][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@a2ba05]; rollback [true]
+[WARN][2015-05-15 11:07:07,919][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 47.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-05-15 11:07:07,920][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 64.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-05-15 11:07:07,997][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Rolled back transaction after test execution for test context [TestContext@364e50ee testClass = UserDaoTest, testInstance = com.phn.dao.UserDaoTest@4fa3551c, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6c28ca1c testClass = UserDaoTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-05-15 11:07:08,012][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@5caf993e: startup date [Fri May 15 11:07:05 CST 2015]; root of context hierarchy
+[INFO][2015-05-15 11:07:08,012][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d3f136e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,userDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-05-15 11:07:08,017][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-05-15 14:20:08,609][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2015-05-15 14:20:08,849][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2015-05-15 14:20:08,928][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@38b5dac4: startup date [Fri May 15 14:20:08 CST 2015]; root of context hierarchy
+[INFO][2015-05-15 14:20:09,047][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-05-15 14:20:09,095][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c31f2a7: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,userDao,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2015-05-15 14:20:09,213][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-05-15 14:20:09,332][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-05-15 14:20:09,819][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-05-15 14:20:09,824][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-05-15 14:20:09,826][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-05-15 14:20:09,827][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-05-15 14:20:10,088][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-05-15 14:20:10,212][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-05-15 14:20:10,217][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-05-15 14:20:10,379][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-05-15 14:20:10,379][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-05-15 14:20:10,382][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-05-15 14:20:10,403][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: soar.t_user
+[INFO][2015-05-15 14:20:10,403][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [uid, uname, usex, upassword]
+[INFO][2015-05-15 14:20:10,403][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-05-15 14:20:10,403][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-05-15 14:20:10,403][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-05-15 14:20:10,481][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-05-15 14:20:09",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:347459675, ConnectTime:"2015-05-15 14:20:10", UseCount:2, LastActiveTime:"2015-05-15 14:20:10"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2015-05-15 14:20:10,635][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 47.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-05-15 14:20:10,636][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 64.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-05-15 14:20:10,779][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@38b5dac4: startup date [Fri May 15 14:20:08 CST 2015]; root of context hierarchy
+[INFO][2015-05-15 14:20:10,779][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c31f2a7: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,userDao,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2015-05-15 14:20:10,786][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
